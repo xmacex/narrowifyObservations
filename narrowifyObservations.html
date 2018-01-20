@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="narrowifyObservations.css">
+    <script src="narrowifyObservations.js"></script>
+    <title>Narrowify observations</title>
+  </head>
+  <body>
+    <div>
+      <p>paste</p>
+      <code class="example">
+citizen, censorship; privacy
+citizen, censorship; governance
+media, governance; privacy
+      </code>
+      <p>to get</p>
+      <code class="example">
+citizen, censorship
+citizen, privacy
+citizen, censorship
+citizen, governance
+media, governance
+media, privacy
+      </code>
+    </div>
+    <textarea id="datainput" rows=10></textarea>
+    header: <input id="includeheader" type="checkbox" onclick="toggleheader(event)">
+    <button onclick="split()">narrowify ☷</button>
+    <div id="output" class="highlightheader"></div>
+  </body>
+</html>

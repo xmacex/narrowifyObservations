@@ -1,0 +1,30 @@
+body {
+    margin: 30px;
+    background-color: #eee;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.example {
+    color: grey;
+    white-space: pre;
+    margin-left: 10px;
+}
+
+textarea#datainput {
+    background-color: white;
+    border: none;
+    width: 100%;
+}
+
+div#output {
+    font-family: monospace;
+    margin-top: 20px;
+    padding: 5px;
+    white-space: pre;
+    background-color: chartreuse;
+}
+
+div.highlightheader::first-line {
+    font-weight: bold;
+}
