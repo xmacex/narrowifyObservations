@@ -24,3 +24,12 @@ function splitLine(line) {
 	).join('');
     }
 }
+
+function copy() {
+    var output = document.getElementById("output");
+    var range = document.createRange();
+    range.selectNodeContents(output);
+    var selection = window.getSelection();
+    selection.addRange(range);
+    document.execCommand("copy");
+}

@@ -23,9 +23,10 @@ media, governance
 media, privacy
       </code>
     </div>
-    <textarea id="datainput" rows=10></textarea>
-    header: <input id="includeheader" type="checkbox" onclick="toggleheader(event)">
-    <button onclick="split()">narrowify ☷</button>
+    <textarea id="datainput" title="insert data rows here" rows=10></textarea>
+    header: <input id="includeheader" type="checkbox" onclick="toggleheader(event)" title="toggle whether there will be a header line in the outout">
+    <button onclick="split()" title="reshape the data to narrow format">narrowify ☷</button>
+    <button onclick="copy()" title="copy output to clipboard">copy ⎘</button>
     <div id="output"></div>
   </body>
 </html>
